@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;     /** 这东西叫“通配符”用来匹配页面上所有元素。body ,ul, li ,p,h1~h6,dd,dt 等都有默认的margin 或padding值的，加上这句就可以删除浏览器这些默认值，方面后面的设置。*/
+
+
+}
+body{
+    background: rgb(244,244,246);
+    padding-top: 44px;
+    padding-bottom: 49px;
+}
+
+
+header{
+    background: rgb(40,133,202);
+    line-height: 44px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+.DS_second_section img{
+    width: 100%;
+}
+footer{
+    display: table;
+    width: 100%;
+    background: black;
+    height: 49px;
+
+
+    left: 0;
+    bottom: 0px;
+    position: fixed;
+}
+
+footer a{
+    text-decoration: none;
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+footer a img{
+    width: 18px;
+}
+
+footer a span{      /*必须是footer a span 这样作用的才是导航栏，要不表格里的span也字都变成白色了 只有一个span的话 作用的是全部span 加上footer a才是特指的span*/
+    display: block;
+   font-size: 12px;
+    color: white;
+
+
+}

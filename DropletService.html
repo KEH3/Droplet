@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>王卓健</title>
+    <link rel="shabi icon" href="Resource/icon.png">
+    <!--stylesheet用来加载外部样式表-->
+    <link rel="stylesheet" href="ExternalStyle.css">
+
+
+    <style>
+        /*成行的标签写法 display：table  width：需求值*/
+        ul{
+            display: table;
+            width: 100%;
+            background:white ;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        /*成列的标签写法 display：table-cell  width：需求值*/
+        li{
+            display: table-cell;
+            width: 33.3%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .DS_second_section img{
+            margin-bottom: -6px;
+        }
+        ul li span{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<!--第一部分-->
+<header class="DS_header">
+<span>小滴服务</span>
+</header>
+<!--第二部分-->
+
+<section class="DS_second_section">
+<img id="bannerImg" src="Resource/banner-1.png" alt="请检查一下您的网络~">
+    <script>
+        var bannerImg = document.getElementById("bannerImg");
+        var imgNember = 1;
+        function changeImg() {
+            imgNember++;
+            if(imgNember > 3){
+                imgNember =1;
+            }
+            bannerImg.src = "Resource/banner-" +imgNember+".png";
+        }
+        setInterval(changeImg,3000);
+    </script>
+</section>
+<!--第三部分-->
+<section>
+<ul>
+    <li>
+        <img src="Resource/index1.png"alt="">
+        <span>企业项目</span>
+
+    <li>
+        <img src="Resource/index2.png"alt="">
+        <span>平台风采</span>
+
+    <li>
+        <img src="Resource/index3.png"alt="">
+        <span>报名流程</span>
+
+</ul>
+<ul>
+    <li>
+        <img src="Resource/index4.png"alt="">
+        <span>客户管理</span>
+
+    <li>
+        <img src="Resource/index5.png"alt="">
+        <span>账务管理</span>
+
+    <li>
+        <img src="Resource/index6.png"alt="">
+        <span>新闻公告</span>
+
+</ul>
+<ul>
+    <li>
+        <img src="Resource/index7.png"alt="">
+        <span>工程案例</span>
+
+    <li>
+        <img src="Resource/index8.png"alt="">
+        <span>修改密码</span>
+
+    <li>
+        <img src="Resource/index9.png"alt="">
+        <span>会员注册</span>
+
+</ul>
+
+    <ul>
+        <li>
+            <img src="Resource/index1.png"alt="">
+            <span>企业项目</span>
+
+        <li>
+            <img src="Resource/index2.png"alt="">
+            <span>平台风采</span>
+
+        <li>
+            <img src="Resource/index3.png"alt="">
+            <span>报名流程</span>
+
+    </ul>
+    <ul>
+        <li>
+            <img src="Resource/index4.png"alt="">
+            <span>客户管理</span>
+
+        <li>
+            <img src="Resource/index5.png"alt="">
+            <span>账务管理</span>
+
+        <li>
+            <img src="Resource/index6.png"alt="">
+            <span>新闻公告</span>
+
+    </ul>
+    <ul>
+        <li>
+            <img src="Resource/index7.png"alt="">
+            <span>工程案例</span>
+
+        <li>
+            <img src="Resource/index8.png"alt="">
+            <span>修改密码</span>
+
+        <li>
+            <img src="Resource/index9.png"alt="">
+            <span>会员注册</span>
+
+    </ul>
+</section>
+<!--第四部分-->
+
+<footer>
+<a href="">
+    <img src="Resource/nav11.png" alt="">
+    <span style="color: red">小滴服务</span>
+</a>
+
+<a href="BusinessProject.html">
+    <img src="Resource/nav20.png" alt="">
+    <span>企业项目</span>
+</a>
+
+<a href="ServiceProcedure.html">
+    <img src="Resource/nav30.png" alt="">
+    <span>服务流程</span>
+</a>
+
+<a href="Platform.html">
+    <img src="Resource/nav40.png" alt="">
+    <span>平台风采</span>
+</a>
+
+<a href="MyDroplet.html">
+    <img src="Resource/nav50.png" alt="">
+    <span>我的小滴</span>
+</a>
+</footer>
+</body>
+</html>
